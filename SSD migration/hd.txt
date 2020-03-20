@@ -1,0 +1,91 @@
+﻿WD-
+WCATR0034069
+
+WD 1TB (1004FBYZ)【企業級Re陣列碟】128MB/7200轉/五年保, $3250 
+WD 2TB (2004FBYZ)【企業級Re陣列碟】128MB/7200轉/五年保, $4890 ★
+	Intel 535系列 120G/7mm/讀:540M/寫:480M/五年/工業包【Intel全球安心保】, $1499 
+SanDisk X400 128G/7mm讀:540M/寫:340M/Marvell/企業級 五年保, $1399 ◆ 
+Intel 540s系列 120G/7mm/讀:560M/寫:400M/五年【Intel全球安心保、新品上市】, $1499 ★ 熱賣
+
+http://imgur.com/D6on7tI.png
+
+
+
+ssd tune
+http://tacolin.blogspot.tw/2011/12/windows7-c.html
+
+http://moonwulk.blogspot.tw/2010/07/windows-7-ssd.html
+
+
+
+目錄
+
+[Windows]
+temp variable old value
+	system	%SystemRoot%\TEMP
+	user	%USERPROFILE%\AppData\Local\Temp
+
+pagefile & system restore disable C
+
+
+%USERPROFILE%
+http://moonwulk.blogspot.tw/2010/06/windows-7-userprofile.html
+http://www.nextofwindows.com/how-to-change-user-profile-default-location-in-windows-7
+http://answers.microsoft.com/en-us/windows/forum/windows_7-desktop/change-the-default-location-of-userprofile-move/dd5a0720-909e-4b71-b665-ba8af19a104f?auth=1
+
+
+copy profile
+	robocopy c:\Users\ e:\ /e /copyall /xj /xd "TmpAdm"
+check junction
+	dir c:\Users\Doggie /al /s
+
+cd koala (在新位置) 17
+	
+mklink /j "Application Data" "AppData\Roaming"
+mklink /j "Cookies "AppData\Roaming\Microsoft\Windows\Cookies"
+mklink /j "Local Settings" "AppData\Local"
+mklink /j "My Documents" "Documents"
+mklink /j "NetHood" "AppData\Roaming\Microsoft\Windows\Network Shortcuts"
+mklink /j "PrintHood" "AppData\Roaming\Microsoft\Windows\Printer Shortcuts"
+mklink /j "Recent" "AppData\Roaming\Microsoft\Windows\Recent"
+mklink /j "SendTo" "AppData\Roaming\Microsoft\Windows\SendTo"
+mklink /j "[開始] 功能表" "AppData\Roaming\Microsoft\Windows\Start Menu"
+mklink /j "Templates" "AppData\Roaming\Microsoft\Windows\Templates"
+
+mklink /j "AppData\Local\Application Data" "AppData\Local"
+mklink /j "AppData\Local\History" "AppData\Local\Microsoft\Windows\History"
+mklink /j "AppData\Local\Temporary Internet Files" "AppData\Local\Microsoft\Windows\Temporary Internet Files"
+
+mklink /j "AppData\Roaming\Microsoft\Windows\Start Menu\程式集" "AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
+
+mklink /j "Documents\My Music" "Music"
+mklink /j "Documents\My Pictures" "Pictures"
+mklink /j "Documents\My Videos" "Videos"
+
+
+cd Default (在新位置) 18
+多1個
+mklink /j "Start Menu" "AppData\Roaming\Microsoft\Windows\Start Menu"
+
+cd Public (在新位置) 3
+mklink /j "Documents\My Music" "Music"
+mklink /j "Documents\My Pictures" "Pictures"
+mklink /j "Documents\My Videos" "Videos"
+
+
+
+[Firefox & Thunderbird]
+http://kb.mozillazine.org/Moving_your_profile_folder#Using_the_Profile_Manager_to_move_your_profile
+http://kb.mozillazine.org/Profile_folder
+about:cache	可確認
+
+[Chrome]
+%LOCALAPPDATA%\Google\Chrome\User Data\
+
+http://blog.joaoko.net/archives/2957
+--profile-directory ⊗ 	Selects directory of profile to associate with the first browser launched.
+--user-data-dir ⊗ 	Specifies the user data directory, which is where the browser will look for all of its state.
+	C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default
+
+[IE]
+I may haved disabled cache production
