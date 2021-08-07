@@ -1,0 +1,2 @@
+# %windir%\Drivers\etc\hosts
+0.0.0.0 sakuradite.com # block Jichi's VNR server, it's non working any more for safety
