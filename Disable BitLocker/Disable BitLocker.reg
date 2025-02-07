@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+; REG ADD HKLM\SYSTEM\CurrentControlSet\Control\BitLocker /v PreventDeviceEncryption /t REG_DWORD /d 1
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\BitLocker]
+"PreventDeviceEncryption"=dword:00000001
