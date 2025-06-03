@@ -1,1 +1,4 @@
 You should not disable MPO normally except preventing display issue.
+
+https://www.reddit.com/r/Windows11/comments/1kgp7ar/cause_and_solution_to_windows_24h2_related/
+https://learn.microsoft.com/windows/win32/dwm/registry-values
