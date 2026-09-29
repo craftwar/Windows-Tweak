@@ -1,0 +1,10 @@
+{
+  "name": "uBlock0@raymondhill.net",
+  "description": "uBlock Origin managed settings",
+  "type": "storage",
+  "data": {
+    "disabledPopupPanelParts": [
+      "globalStats"
+    ]
+  }
+}
